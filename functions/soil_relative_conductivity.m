@@ -1,0 +1,29 @@
+function Krel = soil_relative_conductivity( ...
+    psiMPa, alphaMPa, n, l)
+%SOIL_RELATIVE_CONDUCTIVITY
+%
+% van Genuchten-Mualem relative hydraulic conductivity.
+%
+% Returns dimensionless K/Ksat.
+%
+% alphaMPa is defined in MPa^-1 so no pressure-head
+% conversion is required here.
+
+m = 1 - 1 ./ n;
+
+Se = ...
+    (1 + ...
+    (alphaMPa .* abs(psiMPa)).^n) ...
+    .^(-m);
+
+Krel = ...
+    Se.^l .* ...
+    ( ...
+      1 - ...
+      (1 - Se.^(1./m)).^m ...
+    ).^2;
+
+Krel = max(Krel,0);
+Krel = min(Krel,1);
+
+end
