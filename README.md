@@ -1,4 +1,4 @@
-# METCUT
+# MetCut
 
 **METCUT** is a process-oriented model of hydrogen-isotope propagation from environmental water to plant wax, implemented in MATLAB. It combines soil-water and root uptake processes, plant hydraulics, xylem isotope transport and storage, leaf-water evaporative enrichment, intracellular water exchange, biochemical hydrogen incorporation, and standing plant-wax accumulation.
 
@@ -21,7 +21,7 @@ addpath(fullfile(modelRoot, 'examples'));
 savepath;
 ```
 
-Replace /path/to/METCUT_v1 with the path to your downloaded or cloned METCUT directory.
+Replace /path/to/MetCut_v1 with the path to your downloaded or cloned MetCut directory.
 Saving the path: The savepath command keeps these changes across MATLAB sessions, so you do not need to repeat the setup each time MATLAB starts. Alternatively, use Home → Set Path → Save in the MATLAB interface.
 
 To verify installation, run:
@@ -30,14 +30,14 @@ To verify installation, run:
 which run_full_model_from_hydraulic_checkpoint
 ```
 
-MATLAB should return the full path to the corresponding function in METCUT_v1/functions/.
-Working directory: Once added, METCUT functions can be called from any MATLAB working directory. However, some example and validation scripts use relative paths to locate data or checkpoints. These scripts should be executed from the METCUT_v1 root directory unless otherwise specified in their instructions.
-Note: If you move the METCUT directory after installation, update the saved MATLAB path to reflect its new location.
+MATLAB should return the full path to the corresponding function in MetCut/functions/.
+Working directory: Once added, MetCut functions can be called from any MATLAB working directory. However, some example and validation scripts use relative paths to locate data or checkpoints. These scripts should be executed from the MetCut root directory unless otherwise specified in their instructions.
+Note: If you move the MetCut directory after installation, update the saved MATLAB path to reflect its new location.
 
 ## Repository contents
 
 ```text
-METCUT_v1/
+MetCut/
 ├── functions/          Model functions and numerical utilities
 ├── data/
 │   ├── reference/      Reference model checkpoints and validation data
@@ -58,7 +58,7 @@ METCUT_v1/
 
 ## Getting started
 
-MATLAB is required. Start MATLAB in the root `METCUT` directory and run:
+MATLAB is required. Start MATLAB in the root `MetCut` directory and run:
 
 ```matlab
 root = pwd;
@@ -68,7 +68,7 @@ addpath(fullfile(root, 'examples'), '-begin');
 R = example_01_reference_forward_run;
 ```
 
-This example loads the supplied eight-day hydraulic reference checkpoint, propagates the isotope calculations, and plots intermediate water and instantaneous plant-wax δD trajectories. **It reuses the saved hydraulic solution rather than recalculating it.**
+This example loads the supplied eight-day hydraulic reference checkpoint, propagates the isotope calculations, and plots intermediate water and instantaneous plant-wax δD trajectories. **It reuses the saved hydraulic solution.**
 
 To run the reference forward model directly:
 
