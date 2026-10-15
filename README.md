@@ -13,7 +13,7 @@ To use METCUT functions and examples from any MATLAB working directory, add the 
 Open MATLAB and run:
 
 ```matlab
-modelRoot = '/path/to/METCUT_v1';
+modelRoot = '/path/to/METCUT/folder';
 
 addpath(fullfile(modelRoot, 'functions'));
 addpath(fullfile(modelRoot, 'examples'));
@@ -58,7 +58,7 @@ METCUT_v1/
 
 ## Getting started
 
-MATLAB is required. Start MATLAB in the root `METCUT_v1` directory and run:
+MATLAB is required. Start MATLAB in the root `METCUT` directory and run:
 
 ```matlab
 root = pwd;
