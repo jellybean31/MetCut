@@ -1,6 +1,6 @@
 # MetCut
 
-**METCUT** is a process-oriented model of hydrogen-isotope propagation from environmental water to plant wax, implemented in MATLAB. It combines soil-water and root uptake processes, plant hydraulics, xylem isotope transport and storage, leaf-water evaporative enrichment, intracellular water exchange, biochemical hydrogen incorporation, and standing plant-wax accumulation.
+**MetCut** is a process-oriented model of hydrogen-isotope propagation from environmental water to plant wax, implemented in MATLAB. It combines soil-water and root uptake processes, plant hydraulics, xylem isotope transport and storage, leaf-water evaporative enrichment, intracellular water exchange, biochemical hydrogen incorporation, and standing plant-wax accumulation.
 
 The model tracks δD through intermediate water and biochemical states and predicts instantaneous and accumulated plant-wax δD for the C27, C29, C31, and C33 alkane homologues. The package also includes sensitivity, tracer, and synthetic inverse-recovery examples.
 
@@ -8,12 +8,12 @@ The model tracks δD through intermediate water and biochemical states and predi
 If you use MetCut for future publications, please cite: [`pending...`]
 
 ## Add MetCut to the MATLAB Path
-To use METCUT functions and examples from any MATLAB working directory, add the functions/ and examples/ folders to your MATLAB search path.
+To use MetCut functions and examples from any MATLAB working directory, add the functions/ and examples/ folders to your MATLAB search path.
 
 Open MATLAB and run:
 
 ```matlab
-modelRoot = '/path/to/METCUT/folder';
+modelRoot = '/path/to/MetCut/folder';
 
 addpath(fullfile(modelRoot, 'functions'));
 addpath(fullfile(modelRoot, 'examples'));
@@ -21,7 +21,7 @@ addpath(fullfile(modelRoot, 'examples'));
 savepath;
 ```
 
-Replace /path/to/MetCut_v1 with the path to your downloaded or cloned MetCut directory.
+Replace /path/to/MetCut/folder with the path to your downloaded or cloned MetCut directory.
 Saving the path: The savepath command keeps these changes across MATLAB sessions, so you do not need to repeat the setup each time MATLAB starts. Alternatively, use Home → Set Path → Save in the MATLAB interface.
 
 To verify installation, run:
