@@ -4,7 +4,10 @@
 
 The model tracks δD through intermediate water and biochemical states and predicts instantaneous and accumulated plant-wax δD for the C27, C29, C31, and C33 alkane homologues. The package also includes sensitivity, tracer, and synthetic inverse-recovery examples.
 
-## Add METCUT to the MATLAB Path
+## Citation
+If you use MetCut for future publications, please cite: [`pending...`]
+
+## Add MetCut to the MATLAB Path
 To use METCUT functions and examples from any MATLAB working directory, add the functions/ and examples/ folders to your MATLAB search path.
 
 Open MATLAB and run:
@@ -16,7 +19,6 @@ addpath(fullfile(modelRoot, 'functions'));
 addpath(fullfile(modelRoot, 'examples'));
 
 savepath;
-
 ```
 
 Replace /path/to/METCUT_v1 with the path to your downloaded or cloned METCUT directory.
